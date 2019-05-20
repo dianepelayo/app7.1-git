@@ -7,8 +7,8 @@ document.addEventListener("deviceready", function(){
 		navigator.notification.alert("Deslizo a la izquierda",function(){"Aplicacion","Aceptar"});
 	});
 	
-	$('#derecha').on("swipeleft",function(){
-		navigator.notification.alert("¿Que quieres hacer",function(opt){
+	$('#derecha').on("swiperight",function(){
+		navigator.notification.confirm("¿Que quieres hacer",function(opt){
 			switch(opt)
 			{
 				case 1:
